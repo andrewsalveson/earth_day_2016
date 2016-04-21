@@ -1,0 +1,64 @@
+
+<!-- saved from url=(0038)http://maps.perkinswill.com/earth_day/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>HAPPY EARTH DAY 2016!</title>
+<style type="text/css">
+  body, textarea {
+    border:none;
+    background-color:#dde6e8;
+    color:#003442;
+    font-family: Tahoma, Geneva, sans-serif;
+  }
+  #header {
+    margin-top: 100px;
+  }
+  #main {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .caption {
+    width: 100%;
+  }
+  table td {
+    padding-right: 10px;
+  }
+  textarea {
+    text-align: center;
+    font-size: 22px;
+    height: 3em;
+  }
+</style>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h2>HAPPY EARTH DAY 2016</h2>
+            <br>
+        </div>
+        <div>
+          <b>1.</b> UPLOAD AN IMAGE
+          <input type="file" id="image">
+        </div>
+          <br>
+        <canvas id="canvas" style="width: 600px" width="600" height="448"></canvas>
+        <textarea class="caption" id="text1" cols="60" rows="3" placeholder="2. TYPE YOUR FIRM'S NAME HERE"></textarea><br><br>
+        <table>
+            <tbody>
+            <tr><td colspan="2"><b>3.</b> ADJUST IMAGE AND TEXT SIZE</td></tr>
+            <tr><td>Font size:</td><td><input type="range" id="sliderSize" value="40" min="10" max="72"></td></tr>
+            <tr><td>Image size:</td><td><input type="range" id="sliderImage" value="600" min="240" max="600"></td></tr>
+        </tbody></table>
+        <br><br><br><br>
+        <div>
+        <b>4.</b> UPLOAD YOUR IMAGE TO IMGUR <button id="upload" class="btn btn-primary btn-lg">UPLOAD</button>
+        <div id="uploaded">Once you have uploaded your file, the a link to Imgur will appear here!</div>
+        </div>
+        
+        <img id="placeholder_image" src="./files/placeholder.jpg" style="display: none">
+    </div>
+    <script src="./files/jquery-1.10.1.min.js"></script>
+    <script type="text/javascript" src="./files/index.js"></script>
+
+
+</body></html>
